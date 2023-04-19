@@ -1,0 +1,2 @@
+# Inventory
+ A store inventory
