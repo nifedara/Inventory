@@ -122,9 +122,11 @@ fun Login() {
             )
 
             Spacer(modifier = Modifier.height(6.dp))
-            
-            Row(modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.End)
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.End
+            )
             {
                 Text(
                     text = "Forgot password?",

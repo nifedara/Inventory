@@ -19,9 +19,12 @@ import com.example.tradelinemobile.ui.theme.TradelineMobileTheme
 
 @Composable
 fun Dashboard(storeName: String) {
-    Column(modifier = Modifier.fillMaxWidth()
-           .background(MaterialTheme.colorScheme.background),
-           horizontalAlignment = Alignment.CenterHorizontally,)
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(MaterialTheme.colorScheme.background),
+        horizontalAlignment = Alignment.CenterHorizontally,
+    )
     {
         Spacer(modifier = Modifier.height(80.dp))
 
@@ -59,9 +62,11 @@ fun Dashboard(storeName: String) {
 
             Spacer(modifier = Modifier.width(4.dp))
 
-            Text("Add Products",
+            Text(
+                "Add Products",
                 style = MaterialTheme.typography.labelSmall,
-                color = Color.Black )
+                color = Color.Black
+            )
         }
 
         Spacer(modifier = Modifier.height(182.dp))

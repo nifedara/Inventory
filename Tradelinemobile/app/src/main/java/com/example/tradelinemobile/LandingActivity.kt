@@ -66,8 +66,10 @@ fun Landing() {
                 .width(312.dp)
         )
         {
-            Text(text = "CREATE STORE",
-                color = MaterialTheme.colorScheme.onPrimary)
+            Text(
+                text = "CREATE STORE",
+                color = MaterialTheme.colorScheme.onPrimary
+            )
 
             Image(
                 painterResource(id = R.drawable.create_store_button_img),
@@ -83,7 +85,8 @@ fun Landing() {
         Button(
             onClick = { /* ... */ }, shape = MaterialTheme.shapes.large,
             colors = ButtonDefaults.buttonColors(
-                containerColor = colorResource(id = R.color.blue50)),
+                containerColor = colorResource(id = R.color.blue50)
+            ),
             modifier = Modifier
                 .height(50.dp)
                 .width(312.dp)
