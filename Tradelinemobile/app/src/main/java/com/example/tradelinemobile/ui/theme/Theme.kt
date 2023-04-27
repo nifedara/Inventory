@@ -5,6 +5,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColorScheme(
     primary = Blue50,
@@ -20,6 +21,8 @@ private val LightColorPalette = lightColorScheme(
     primaryContainer = Teal200,
     onPrimaryContainer = Purple500,
     onSecondaryContainer = Purple200,
+    onBackground = Gray,
+    background = Color.White
 
     /* Other default colors to override
     background = Color.White,

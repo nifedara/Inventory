@@ -1,6 +1,7 @@
 package com.example.tradelinemobile
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -19,7 +20,8 @@ fun Landing() {
     Row(
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 160.dp),
+            .padding(top = 160.dp)
+            .background(MaterialTheme.colorScheme.background),
         horizontalArrangement = Arrangement.Center,
     )
     {

@@ -24,7 +24,7 @@ val Typography = Typography(
     titleLarge = TextStyle(
         fontFamily = Inter,
         fontWeight = FontWeight.Bold,
-        fontSize = 20.sp
+        fontSize = 20.sp,
     ),
     titleSmall = TextStyle(
         fontFamily = Roboto,
@@ -33,7 +33,7 @@ val Typography = Typography(
     ),
     labelMedium = TextStyle(
         fontFamily = Roboto,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 12. sp,
     ),
     labelSmall = TextStyle(
@@ -55,5 +55,10 @@ val Typography = Typography(
         fontFamily = Roboto,
         fontWeight = FontWeight.Medium,
         fontSize = 16. sp,
+    ),
+    bodyLarge = TextStyle(
+        fontFamily = Inter,
+        fontWeight = FontWeight.Light,
+        fontSize = 16.sp
     ),
 )
