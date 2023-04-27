@@ -19,69 +19,6 @@ import com.example.tradelinemobile.ui.theme.TradelineMobileTheme
 
 @Composable
 fun Dashboard(storeName: String) {
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .background(MaterialTheme.colorScheme.background),
-        horizontalAlignment = Alignment.CenterHorizontally,
-    )
-    {
-        Spacer(modifier = Modifier.height(80.dp))
-
-        Image(
-            painter = painterResource(R.drawable.startup_investment),
-            contentDescription = "tradeline image",
-            modifier = Modifier
-                .size(230.dp)
-        )
-
-        Spacer(modifier = Modifier.height(50.dp))
-
-        Text(
-            text = "$storeName store has been created successfully",
-            style = MaterialTheme.typography.bodyLarge,
-            color = Color.Black,
-            textAlign = TextAlign.Center
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        OutlinedButton(
-            onClick = { /* Do something! */ },
-            border = BorderStroke(1.dp, colorResource(id = R.color.blue100)),
-            modifier = Modifier
-                .height(33.dp)
-                .width(132.dp)
-        ) {
-            Icon(
-                painter = painterResource(R.drawable.add_buton),
-                contentDescription = "add button",
-                modifier = Modifier.size(10.dp),
-                colorResource(id = R.color.blue100)
-            )
-
-            Spacer(modifier = Modifier.width(4.dp))
-
-            Text(
-                "Add Products",
-                style = MaterialTheme.typography.labelSmall,
-                color = Color.Black
-            )
-        }
-
-        Spacer(modifier = Modifier.height(182.dp))
-
-//        var selectedItem by remember { mutableStateOf(0) }
-//        val items = listOf("Songs", "Artists", "Playlists")
-
-        NavigationBar(
-            modifier = Modifier.height(59.dp),
-            containerColor = Color.White,
-            tonalElevation = 28.dp
-        ) {
-
-        }
-    }
 }
 
 @Preview(showBackground = true)
