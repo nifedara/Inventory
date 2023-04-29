@@ -71,16 +71,65 @@ fun CreateStoreSuccess(storeName: String) {
 
         Spacer(modifier = Modifier.height(182.dp))
 
-//        var selectedItem by remember { mutableStateOf(0) }
-//        val items = listOf("Songs", "Artists", "Playlists")
+        var selectedItem by remember { mutableStateOf(0) }
+        val items = listOf("home", "sales", "inventory", "analytics", "account")
 
         NavigationBar(
-            modifier = Modifier.height(59.dp),
-            containerColor = Color.White,
-            tonalElevation = 28.dp
+            containerColor = colorResource(id = R.color.nav_white),
+            tonalElevation = 12.dp
         ) {
+            items.forEachIndexed { index, item ->
+                NavigationBarItem(
+                    colors = NavigationBarItemDefaults.colors(
+                        selectedIconColor = colorResource(id = R.color.blue100),
+                        selectedTextColor = colorResource(id = R.color.blue100),
+                        indicatorColor = colorResource(id = R.color.blue50),
+                        unselectedIconColor = colorResource(id = R.color.nav_text_gray),
+                        unselectedTextColor = colorResource(id = R.color.nav_text_gray),
+                    ),
+                    icon = {
+                        when (item) {
+                            "home" -> Icon(
+                                painter = painterResource(id = R.drawable.home_inactive_icon),
+                                contentDescription = "home icon",
+                                modifier = Modifier,
+                            )
+                            "sales" -> Icon(
+                                painter = painterResource(R.drawable.sales_icon),
+                                contentDescription = "sales icon",
+                                modifier = Modifier,
+                            )
 
+                            "inventory" -> Icon(
+                                painter = painterResource(id = R.drawable.inventory_inactive_icon),
+                                contentDescription = "inventory icon",
+                                modifier = Modifier,
+                            )
+                            "analytics" -> Icon(
+                                painter = painterResource(id = R.drawable.analytics_inactive_icon_),
+                                contentDescription = "analytics icon"
+                            )
+
+                            "account" -> Icon(
+                                painter = painterResource(id = R.drawable.account_inactive_icon),
+                                contentDescription = "account icon",
+                                modifier = Modifier,
+                            )
+                        }
+
+                    },
+                    label = {
+                        Text(
+                            item,
+                            style = MaterialTheme.typography.displaySmall
+                        )
+                    },
+                    selected = selectedItem == index,
+                    onClick = { }
+                )
+            }
         }
+
     }
 }
 

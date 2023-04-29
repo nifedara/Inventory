@@ -20,8 +20,8 @@ fun Landing() {
     Row(
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 160.dp)
-            .background(MaterialTheme.colorScheme.background),
+            .padding(top = 160.dp),
+//            .background(MaterialTheme.colorScheme.background),
         horizontalArrangement = Arrangement.Center,
     )
     {
@@ -44,6 +44,7 @@ fun Landing() {
 
     Column(
         modifier = Modifier.fillMaxWidth(),
+//            .background(MaterialTheme.colorScheme.background),
         horizontalAlignment = Alignment.CenterHorizontally
     )
     {
