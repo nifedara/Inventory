@@ -1,8 +1,10 @@
 package com.example.tradelinemobile
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -15,7 +17,7 @@ import com.example.tradelinemobile.ui.theme.TradelineMobileTheme
 
 
 @Composable
-fun ComingSoon() {
+fun RecordSalesActivity() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -25,12 +27,7 @@ fun ComingSoon() {
     {
         Spacer(modifier = Modifier.height(294.dp))
 
-        Image(
-            painter = painterResource(R.drawable.lettering_coming_soon),
-            contentDescription = "coming soon image",
-            modifier = Modifier
-                .size(150.dp)
-        )
+
 
         Spacer(modifier = Modifier.height(234.dp))
 
@@ -98,6 +95,6 @@ fun ComingSoon() {
 
 @Preview(showBackground = true)
 @Composable
-fun ComingSoonPreview() {
-    TradelineMobileTheme { ComingSoon() }
+fun SalesRecordSalesActivityPreview() {
+    TradelineMobileTheme { RecordSalesActivity() }
 }

@@ -30,7 +30,7 @@ fun CreateStoreSuccess(storeName: String) {
 
         Image(
             painter = painterResource(R.drawable.startup_investment),
-            contentDescription = "tradeline image",
+            contentDescription = "tradeline store creation success image",
             modifier = Modifier
                 .size(230.dp)
         )

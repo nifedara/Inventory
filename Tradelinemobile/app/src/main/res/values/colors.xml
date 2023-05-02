@@ -11,4 +11,9 @@
     <color name="blue50">#E7F7FB</color>
     <color name="nav_text_gray">#A9A9A9</color>
     <color name="nav_white">#F7F9FA</color>
+    <color name="GrayText">#808080</color>
+    <color name="container_Blue">#E7F7FB</color>
+    <color name="container_Green">#E1F2CD</color>
+    <color name="container_Purple">#CDCDE6</color>
+    <color name="container_Gray">#F5F5F5</color>
 </resources>
